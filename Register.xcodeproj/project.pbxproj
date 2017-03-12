@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA1784DE1E71E04A00B332AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1784DD1E71E04A00B332AA /* AppDelegate.swift */; };
-		FA1784E11E71E04A00B332AA /* PinCode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA1784DF1E71E04A00B332AA /* PinCode.xcdatamodeld */; };
+		FA1784E11E71E04A00B332AA /* Register.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA1784DF1E71E04A00B332AA /* Register.xcdatamodeld */; };
 		FA1784E31E71E04A00B332AA /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1784E21E71E04A00B332AA /* MasterViewController.swift */; };
 		FA1784E51E71E04A00B332AA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1784E41E71E04A00B332AA /* DetailViewController.swift */; };
 		FA1784E81E71E04A00B332AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1784E61E71E04A00B332AA /* Main.storyboard */; };
@@ -17,9 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA1784DA1E71E04A00B332AA /* PinCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1784DA1E71E04A00B332AA /* Register.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Register.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1784DD1E71E04A00B332AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA1784E01E71E04A00B332AA /* PinCode.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PinCode.xcdatamodel; sourceTree = "<group>"; };
+		FA1784E01E71E04A00B332AA /* Register.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Register.xcdatamodel; sourceTree = "<group>"; };
 		FA1784E21E71E04A00B332AA /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		FA1784E41E71E04A00B332AA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FA1784E71E71E04A00B332AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		FA1784D11E71E04A00B332AA = {
 			isa = PBXGroup;
 			children = (
-				FA1784DC1E71E04A00B332AA /* PinCode */,
+				FA1784DC1E71E04A00B332AA /* Register */,
 				FA1784DB1E71E04A00B332AA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +50,12 @@
 		FA1784DB1E71E04A00B332AA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA1784DA1E71E04A00B332AA /* PinCode.app */,
+				FA1784DA1E71E04A00B332AA /* Register.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FA1784DC1E71E04A00B332AA /* PinCode */ = {
+		FA1784DC1E71E04A00B332AA /* Register */ = {
 			isa = PBXGroup;
 			children = (
 				FA1784DD1E71E04A00B332AA /* AppDelegate.swift */,
@@ -65,17 +65,17 @@
 				FA1784E91E71E04A00B332AA /* Assets.xcassets */,
 				FA1784EB1E71E04A00B332AA /* LaunchScreen.storyboard */,
 				FA1784EE1E71E04A00B332AA /* Info.plist */,
-				FA1784DF1E71E04A00B332AA /* PinCode.xcdatamodeld */,
+				FA1784DF1E71E04A00B332AA /* Register.xcdatamodeld */,
 			);
-			path = PinCode;
+			path = Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FA1784D91E71E04A00B332AA /* PinCode */ = {
+		FA1784D91E71E04A00B332AA /* Register */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA1784F11E71E04A00B332AA /* Build configuration list for PBXNativeTarget "PinCode" */;
+			buildConfigurationList = FA1784F11E71E04A00B332AA /* Build configuration list for PBXNativeTarget "Register" */;
 			buildPhases = (
 				FA1784D61E71E04A00B332AA /* Sources */,
 				FA1784D71E71E04A00B332AA /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = PinCode;
+			name = Register;
 			productName = PinCode;
-			productReference = FA1784DA1E71E04A00B332AA /* PinCode.app */;
+			productReference = FA1784DA1E71E04A00B332AA /* Register.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -107,7 +107,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FA1784D51E71E04A00B332AA /* Build configuration list for PBXProject "PinCode" */;
+			buildConfigurationList = FA1784D51E71E04A00B332AA /* Build configuration list for PBXProject "Register" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -120,7 +120,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA1784D91E71E04A00B332AA /* PinCode */,
+				FA1784D91E71E04A00B332AA /* Register */,
 			);
 		};
 /* End PBXProject section */
@@ -143,7 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA1784E11E71E04A00B332AA /* PinCode.xcdatamodeld in Sources */,
+				FA1784E11E71E04A00B332AA /* Register.xcdatamodeld in Sources */,
 				FA1784DE1E71E04A00B332AA /* AppDelegate.swift in Sources */,
 				FA1784E31E71E04A00B332AA /* MasterViewController.swift in Sources */,
 				FA1784E51E71E04A00B332AA /* DetailViewController.swift in Sources */,
@@ -270,9 +270,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 36CR7TMHKH;
-				INFOPLIST_FILE = PinCode/Info.plist;
+				INFOPLIST_FILE = Register/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pro.alexma.pincode;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = pro.alexma.register;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -283,9 +284,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 36CR7TMHKH;
-				INFOPLIST_FILE = PinCode/Info.plist;
+				INFOPLIST_FILE = Register/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pro.alexma.pincode;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = pro.alexma.register;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -294,7 +296,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA1784D51E71E04A00B332AA /* Build configuration list for PBXProject "PinCode" */ = {
+		FA1784D51E71E04A00B332AA /* Build configuration list for PBXProject "Register" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA1784EF1E71E04A00B332AA /* Debug */,
@@ -303,7 +305,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA1784F11E71E04A00B332AA /* Build configuration list for PBXNativeTarget "PinCode" */ = {
+		FA1784F11E71E04A00B332AA /* Build configuration list for PBXNativeTarget "Register" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA1784F21E71E04A00B332AA /* Debug */,
@@ -315,13 +317,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FA1784DF1E71E04A00B332AA /* PinCode.xcdatamodeld */ = {
+		FA1784DF1E71E04A00B332AA /* Register.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				FA1784E01E71E04A00B332AA /* PinCode.xcdatamodel */,
+				FA1784E01E71E04A00B332AA /* Register.xcdatamodel */,
 			);
-			currentVersion = FA1784E01E71E04A00B332AA /* PinCode.xcdatamodel */;
-			path = PinCode.xcdatamodeld;
+			currentVersion = FA1784E01E71E04A00B332AA /* Register.xcdatamodel */;
+			path = Register.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

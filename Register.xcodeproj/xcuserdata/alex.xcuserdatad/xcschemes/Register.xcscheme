@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FA1784D91E71E04A00B332AA"
-               BuildableName = "PinCode.app"
-               BlueprintName = "PinCode"
-               ReferencedContainer = "container:PinCode.xcodeproj">
+               BuildableName = "Register.app"
+               BlueprintName = "Register"
+               ReferencedContainer = "container:Register.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FA1784D91E71E04A00B332AA"
-            BuildableName = "PinCode.app"
-            BlueprintName = "PinCode"
-            ReferencedContainer = "container:PinCode.xcodeproj">
+            BuildableName = "Register.app"
+            BlueprintName = "Register"
+            ReferencedContainer = "container:Register.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FA1784D91E71E04A00B332AA"
-            BuildableName = "PinCode.app"
-            BlueprintName = "PinCode"
-            ReferencedContainer = "container:PinCode.xcodeproj">
+            BuildableName = "Register.app"
+            BlueprintName = "Register"
+            ReferencedContainer = "container:Register.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FA1784D91E71E04A00B332AA"
-            BuildableName = "PinCode.app"
-            BlueprintName = "PinCode"
-            ReferencedContainer = "container:PinCode.xcodeproj">
+            BuildableName = "Register.app"
+            BlueprintName = "Register"
+            ReferencedContainer = "container:Register.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
