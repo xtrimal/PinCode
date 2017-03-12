@@ -272,7 +272,7 @@
 				DEVELOPMENT_TEAM = 36CR7TMHKH;
 				INFOPLIST_FILE = PinCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pro.alexma.PinCode;
+				PRODUCT_BUNDLE_IDENTIFIER = pro.alexma.pincode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -285,7 +285,7 @@
 				DEVELOPMENT_TEAM = 36CR7TMHKH;
 				INFOPLIST_FILE = PinCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pro.alexma.PinCode;
+				PRODUCT_BUNDLE_IDENTIFIER = pro.alexma.pincode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -310,6 +310,7 @@
 				FA1784F31E71E04A00B332AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

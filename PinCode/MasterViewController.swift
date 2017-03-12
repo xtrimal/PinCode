@@ -13,19 +13,60 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
 
     var detailViewController: DetailViewController? = nil
     var managedObjectContext: NSManagedObjectContext? = nil
+    
+    var isOnline = true
 
+    @IBOutlet weak var employeeImageView: UIImageView!
+    @IBOutlet weak var onlineStatusView: UIView!
+    @IBOutlet weak var openCloseButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.navigationItem.leftBarButtonItem = self.editButtonItem
-
-        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
-        self.navigationItem.rightBarButtonItem = addButton
+//        self.navigationItem.leftBarButtonItem = self.editButtonItem
+//
+//        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
+//        self.navigationItem.rightBarButtonItem = addButton
         if let split = self.splitViewController {
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
         }
+        
+        setupOnlineStatus()
+        setupOpenCloseButton()
+        setupEmployee()
+    }
+    
+    //online status indication setup
+    func setupOnlineStatus() {
+        onlineStatusView.layer.cornerRadius = onlineStatusView.frame.size.width / 2
+        onlineStatusView.layer.borderWidth = 1.0
+        onlineStatusView.layer.borderColor = UIColor.lightGray.cgColor
+        onlineStatusView.layoutIfNeeded()
+        
+        if isOnline {
+            onlineStatusView.backgroundColor = UIColor.green;
+        } else {
+            onlineStatusView.backgroundColor = UIColor.lightGray;
+        }
+    }
+    
+    //OpenCloseButton visual and status setup
+    func setupOpenCloseButton() {
+        openCloseButton.layer.cornerRadius = 5
+        openCloseButton.layer.borderWidth = 2.0
+        openCloseButton.layer.borderColor = UIColor.lightGray.cgColor
+        openCloseButton.layoutIfNeeded()
+        
+        //OpenCloseButton status setup should be here
+    }
+    
+    //Employee data setup (photo, name, cash etc)
+    func setupEmployee() {
+        employeeImageView.layer.cornerRadius = employeeImageView.frame.size.width / 2
+        employeeImageView.layer.borderWidth = 2.0
+        employeeImageView.layer.borderColor = UIColor.lightGray.cgColor
+        employeeImageView.layoutIfNeeded()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -73,24 +114,49 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
     // MARK: - Table View
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return self.fetchedResultsController.sections?.count ?? 0
+//        if self.fetchedResultsController.sections != nil {
+//            return self.fetchedResultsController.sections!.count
+//        }
+        return 3
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let sectionInfo = self.fetchedResultsController.sections![section]
-        return sectionInfo.numberOfObjects
+//        let sectionInfo = self.fetchedResultsController.sections![section]
+//        return sectionInfo.numberOfObjects
+        if section == 0 {
+            return 1
+        } else if section == 1 {
+            return 6
+        }
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let event = self.fetchedResultsController.object(at: indexPath)
-        self.configureCell(cell, withEvent: event)
+//        OrganizationNameCell
+//        SellScreenCell
+//        SalesHistoryCell
+//        CashManagementCell
+//        CloseRegisterCell
+//        DashboardCell
+//        SettingsCell
+//        Employee
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "OrganizationNameCell", for: indexPath)
+//        let event = self.fetchedResultsController.object(at: indexPath)
+//        self.configureCell(cell, withEvent: event)
+        
+        let cell = super.tableView(tableView, cellForRowAt: indexPath)
+        
+        // this is where you set your color view
+        let customColorView = UIView.init()
+        customColorView.backgroundColor = UIColor.darkGray //colorWithRed:180/255.0 green:138/255.0 blue:171/255.0 alpha:0.5];
+        cell.selectedBackgroundView =  customColorView
+        
         return cell
     }
 
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
-        return true
+        return false
     }
 
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
